@@ -23,6 +23,10 @@ header, footer {
     text-align: center;
 }
 
+a {
+    color: whitesmoke;
+}
+
 li {
     display: inline-block;
     border: solid brown 5px;
@@ -51,12 +55,8 @@ img {
     margin: 5px 20px;
 }
 
-p {
+p.hiketext {
     display: inline-block;
     width: 500px;
     padding: 5px;
-}
-
-a {
-    color: whitesmoke;
 }
