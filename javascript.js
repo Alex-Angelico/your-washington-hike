@@ -8,19 +8,19 @@ function greetingWeekDay() {
     var date = new Date();
     var weekDay = date.getDay();
     
-    if (weekDay == 0)  {
+    if (weekDay === 0)  {
         greeting = "happy Sunday!";
-    } else if (weekDay == 1)  {
+    } else if (weekDay === 1)  {
         greeting = "happy Monday!";
-    } else if (weekDay == 2)  {
+    } else if (weekDay === 2)  {
         greeting = "happy Tuesday!";
-    } else if (weekDay == 3)  {
+    } else if (weekDay === 3)  {
         greeting = "happy Wednesday!";
-    } else if (weekDay == 4)  {
+    } else if (weekDay === 4)  {
         greeting = "happy Thursday!";
-    } else if (weekDay == 5)  {
+    } else if (weekDay === 5)  {
         greeting = "happy Friday!";
-    } else if (weekDay == 6)  {
+    } else if (weekDay === 6)  {
         greeting = "happy Saturday!";
     } else {
         greeting = "you're hiking on another planet!";
