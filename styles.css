@@ -2,6 +2,7 @@ body {
     color: whitesmoke;
     border-radius: 30%;
     background-color: skyblue;
+    width: fit-content;
 }
 
 header, footer {
@@ -28,7 +29,6 @@ li {
     padding: 10px;
     margin: 5px 40px;
     background-color: burlywood;
-    color: whitesmoke;
     border-radius: 30%;
     font-size: .75cm;
 }
@@ -44,7 +44,6 @@ section {
 h3 {
     display: inline-block;
     margin: 20px;
-    margin-block-start: 200px;
 }
 
 img {
@@ -54,7 +53,10 @@ img {
 
 p {
     display: inline-block;
-    margin: 5px 20px;
-    margin-top: auto;
-    inlin
+    width: 500px;
+    padding: 5px;
+}
+
+a {
+    color: whitesmoke;
 }

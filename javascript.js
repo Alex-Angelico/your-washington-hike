@@ -1,24 +1,30 @@
-var hikerName = "Hi " + prompt("What's your name?") + "! "
+var hikerName = "Hi " + prompt("What's your name?") + ", "
 var greeting;
 var date = new Date();
 var weekDay = date.getDay();
 
 if (weekDay == 0)  {
-    greeting = "Happy Sunday!";
+    greeting = "happy Sunday!";
 } else if (weekDay == 1)  {
-    greeting = "Happy Monday!";
+    greeting = "happy Monday!";
 } else if (weekDay == 2)  {
-    greeting = "Happy Tuesday!";
+    greeting = "happy Tuesday!";
 } else if (weekDay == 3)  {
-    greeting = "Happy Wednesday!";
+    greeting = "happy Wednesday!";
 } else if (weekDay == 4)  {
-    greeting = "Happy Thursday!";
+    greeting = "happy Thursday!";
 } else if (weekDay == 5)  {
-    greeting = "Happy Friday!";
+    greeting = "happy Friday!";
 } else if (weekDay == 6)  {
-    greeting = "Happy Saturday!";
+    greeting = "happy Saturday!";
 } else {
-    greeting = "You're hiking on another planet!"
+    greeting = "you're hiking on another planet!"
 }
 
-document.write(hikerName + greeting);
+if (confirm("Are you ready to hit the trail?")) {
+    response = " Let's find a place to go hiking!";
+} else {
+    response = " Here are some beautiful trails to plan for the next time you head out.";
+}
+
+document.write(hikerName + greeting + response);
