@@ -1,4 +1,4 @@
-var hikerName = "Hi " + prompt("What's your name?") + ", "
+var hikerName = "Hi " + prompt("What's your name?") + ", ";
 var greeting;
 var date = new Date();
 var weekDay = date.getDay();
@@ -18,7 +18,7 @@ if (weekDay == 0)  {
 } else if (weekDay == 6)  {
     greeting = "happy Saturday!";
 } else {
-    greeting = "you're hiking on another planet!"
+    greeting = "you're hiking on another planet!";
 }
 
 if (confirm("Are you ready to hit the trail?")) {
