@@ -49,7 +49,7 @@ function questionHiking() {
 
 function numberGuess() {
     var number = '72';
-    var guess = prompt("That's what I like to hear! Oh by the way, I've got a game to play while you're out hiking with a buddy: guess the number. Play between 1 and a 1,000,000 and see how many miles go by before one of you guesses--or pushes the other down a switchback!\n\nBefore you move on to check out the trails, let's try a practice run...\n\nWhat number am I thinking of between 1 and 100?");
+    var guess = prompt("That's what I like to hear!\n\nOh, by the way, I've got a game to play while you're out hiking with a buddy: guess the number. Play between 1 and a 1,000,000 and see how many miles go by before one of you guesses--or pushes the other down a switchback! Before you move on to check out the trails, let's try a practice run...\n\nWhat number am I thinking of between 1 and 100?");
     for (var i = 1; i < 10; i++) {
         if (i < 3 && guess === number) {
             message = "That was fast! ";
