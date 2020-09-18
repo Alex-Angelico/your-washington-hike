@@ -1,3 +1,5 @@
+testVar = "TEST"
+
 function questionHikerName() {
     var hikerName = prompt("What's your name?");
     while (hikerName === "") {
@@ -34,17 +36,21 @@ function greetingWeekDay() {
 }
 
 function questionHiking() {
-    while (!confirm("Are you ready to hit the trail?")) {
-        if (confirm("That's not a can-do hiking attitude. Once again: are you ready to go hiking?")) {
-            response = " Let's find a place to go hiking!";
-            break;
-        } else {
-            confirm("That's not a can-do hiking attitude. Once again: are you ready to go hiking?");
+    console.log(testVar)
+    if (confirm("Are you ready to hit the trail?")) {
+        response = " Let's find a place to go hiking!";
+        return response;
+    } else {
+        while (!confirm("That's not a can-do hiking attitude. Once again: are you ready to go hiking?")) {
+             if (confirm("That's not a can-do hiking attitude. Once again: are you ready to go hiking?")) {
+                break;
+            } else {
+                continue;
+            }
         }
-        break;
     }
         response = " Let's find a place to go hiking!";
-        return response
+        return response;
 }
 
 function numberGuess() {
@@ -52,15 +58,13 @@ function numberGuess() {
     var guess = prompt("That's what I like to hear!\n\nOh, by the way, I've got a game to play while you're out hiking with a buddy: guess the number. Play between 1 and a 1,000,000 and see how many miles go by before one of you guesses--or pushes the other down a switchback! Before you move on to check out the trails, let's try a practice run...\n\nWhat number am I thinking of between 1 and 100?");
     for (var i = 1; i < 10; i++) {
         if (i < 3 && guess === number) {
-            message = "That was fast! ";
-            return message;
+            alert("That was fast!");
             break;
         } else if (i < 3 && guess !== number) {
             guess = prompt("Nope. Guess again.");
         } else {
             if ((i >= 3 && i < 6) && guess === number) {
-                message = "There you go. ";
-                return message;
+                alert("There you go.");
                 break;
             } else if ((i >= 3 && i < 6) && guess !== number) {
                 if (i === 3) {
@@ -70,8 +74,7 @@ function numberGuess() {
                 }
             } else {
                 if ((i >= 6 && i < 9) && guess === number) {
-                    message = "Whew! That took a while. ";
-                    return message;
+                    alert("Whew! That took a while.");
                     break;
                 } else if ((i >= 6 && i < 9) && guess !== number) {
                     if (i === 6) {
@@ -80,14 +83,17 @@ function numberGuess() {
                         guess = prompt("Nope. Guess again.");
                     }
                 } else if (i === 9 && guess !== number) {
-                    message = "Fine, I'll just let you through. The number was 72. ";
-                    return message;
+                    alert("Fine, I'll just let you through. The number was 72.");
                 }
             }
         }
     }
 }
 
-welcomeMessage = questionHikerName() + greetingWeekDay() + questionHiking();
+document.write(questionHikerName() + greetingWeekDay() + questionHiking());
 
-document.write((guessMessage = numberGuess()) + welcomeMessage);
+numberGuess();
+
+// welcomeMessage = questionHikerName() + greetingWeekDay() + questionHiking();
+
+// document.write((guessMessage = numberGuess()) + welcomeMessage);
