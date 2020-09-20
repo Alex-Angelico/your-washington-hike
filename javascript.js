@@ -90,7 +90,3 @@ function numberGuess() {
 document.write(questionHikerName() + greetingWeekDay() + questionHiking());
 
 numberGuess();
-
-// welcomeMessage = questionHikerName() + greetingWeekDay() + questionHiking();
-
-// document.write((guessMessage = numberGuess()) + welcomeMessage);
